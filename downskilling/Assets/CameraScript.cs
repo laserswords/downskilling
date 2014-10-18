@@ -6,6 +6,6 @@ public class CameraScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		this.transform.position = new Vector3 (player1.position.x, 0, -10);
+		transform.position = new Vector3 (player1.position.x, transform.position.y, -10);
 	}
 }
