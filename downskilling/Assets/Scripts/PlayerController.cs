@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 		
 		//Jump
 		if (Input.GetButtonDown (jumpButton) && jump) {
-			jump = false;
+			//jump = false;
 			Vector3 dir = Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right;
 			rigidbody2D.AddForce(dir * jumpSpeed);
 		}		
