@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour {
 		//moving horizontally
 		translation = Input.GetAxis (horizontalControl) * acceleration;
 		translation *= Time.deltaTime;
+		jumpSpeed = 9;
 		if (rigidbody2D.velocity.x < maxSpeed)
 			rigidbody2D.AddForce(new Vector2 (translation, 0));
 		
